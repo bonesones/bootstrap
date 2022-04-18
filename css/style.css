@@ -6,6 +6,7 @@
 }
 *{
     font-family: Domine-Bold;
+    overflow-x: hidden;
 }
 @media screen and (min-width:450.2px) {
     
