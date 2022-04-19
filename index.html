@@ -43,7 +43,7 @@
 					<hr class = info-hr>
 				</div>
 			</div>
-			<div class="container reviews-container">		
+			<div class="container reviews-container d-flex justify-content-center">		
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
 					<div class="carousel-indicators carousel-light">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,6 +77,8 @@
 						</q>
 						</div>
 					</div>
+				</div>
+				<div class="arrow-icons">
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Предыдущий</span>
@@ -85,31 +87,27 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Следующий</span>
 					</button>
-					</div>
-				
-				
+				</div>
 			</div>
-
-
-
-
-
 		</main>
 		<div class="container footer">
 			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
-			  <div class="col-md-4 d-flex align-items-center">
+			  <div class="col-md-4 d-flex align-items-center" id = 'copyrite' >
 				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
 				  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
 				</a>
 				<span>&copy;2022 BaBadoo.</span>
 			  </div>
-		  
-			  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-				<li class="ms-3"><a href="#"><img src="images/VK.png" class="bi" width="24" height="24"></a></li>
-				<li class="ms-3"><a href="#"><img src="images/inst.png" class="bi" width="24" height="24"></a></li>
-				<li class="ms-3"><a href="#"><img src="images/tg.png" class="bi" width="24" height="24"></a></li>
-				
-			  </ul>
+			  <div class = 'col-md-3 d-block justify-content-end' id = 'contacts'>
+				  	<p class = 'questions'>Возникли вопросы?</p>
+					<p class="questions">Свяжитесь с нами</p>
+					<ul class="nav list-unstyled d-flex">
+						<li class="ms-3"><a href="#"><img src="images/VK.png" width="24" height="24"></a></li>
+						<li class="ms-3"><a href="#"><img src="images/inst.png" width="24" height="24"></a></li>
+						<li class="ms-3"><a href="#"><img src="images/tg.png" width="24" height="24"></a></li>
+						
+					</ul>
+				</div>
 			</footer>
 		  </div>
 		<script src = 'js/bootstrap.bundle.min.js'></script>

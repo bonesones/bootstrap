@@ -19,21 +19,69 @@
             </nav>
 		</header>
         <main>
+            <img src="images/heart.png" width="40" height="40" class="img-fluid rounded mx-auto d-block" id = 'heart'>
+            <div class = 'mx-auto' id = 'circle'></div>
             <div class="container account-creating">
-                <img src="images/heart.png" width="30" height="30" class="img-fluid rounded mx-auto d-block" id = 'heart'>
-
-
+                <h2 id = 'title' class="text-center"><b>СОЗДАНИЕ АККАУНТА</b></h2>
+                <form>  
+                    <div class="mt-4">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control form-control-sm" id="name">
+                    </div>
+                    <div class="mt-3">
+                        <label for="surname" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control form-control-sm" id="surname">
+                    </div>
+                    <div class="mt-3">
+                        <label for="birth" class="form-label">Дата рождения</label>
+                        <input type="date" class="form-control form-control-sm" id="birth">
+                    </div>
+                    <div class="mt-3">
+                        <label for="email" class="form-label">Почта</label>
+                        <input type="email" class="form-control form-control-sm" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mt-3" id = 'passw'>
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" class="form-control form-control-sm" id="pass">
+                        <a href="#" class="password-control" onclick= "return show_hide_password(this);"></a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id = 'sumbtn'>Создать</button>
+                </form>
             </div>
-
-            
-
-
         </main>
-        <footer>
-
-
-
-
-        </footer>
+        <div class="container footer">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
+			  <div class="col-md-4 d-flex align-items-center" id = 'copyrite' >
+				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+				  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+				</a>
+				<span>&copy;2022 BaBadoo.</span>
+			  </div>
+			  <div class = 'col-md-3 d-block justify-content-end' id = 'contacts'>
+				  	<p class = 'questions'>Возникли вопросы?</p>
+					<p class="questions">Свяжитесь с нами</p>
+					<ul class="nav list-unstyled d-flex">
+						<li class="ms-3"><a href="#"><img src="images/VK.png" width="24" height="24"></a></li>
+						<li class="ms-3"><a href="#"><img src="images/inst.png" width="24" height="24"></a></li>
+						<li class="ms-3"><a href="#"><img src="images/tg.png" width="24" height="24"></a></li>
+						
+					</ul>
+				</div>
+			</footer>
+		  </div>
         <script src = 'js/bootstrap.bundle.min.js'></script>
+        <script>
+            function show_hide_password(target){
+            var input = document.getElementById('pass');
+            if (input.getAttribute('type') == 'password') {
+                target.classList.add('view');
+                input.setAttribute('type', 'text');
+            } else {
+                target.classList.remove('view');
+                input.setAttribute('type', 'password');
+            }
+            return false;
+        
+        }
+        </script>
     </body>
