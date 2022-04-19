@@ -294,7 +294,7 @@ main{
 }
 .hat-container{
     padding: 0 0 20px 0;
-    background-image: url(../images/hat.png);
+    background-image: url(../images/hat.webp);
 }
 .create-btn:hover{
     background-color: #d44ac1;
