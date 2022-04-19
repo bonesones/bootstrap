@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name = 'description' 
+		content="BaBadoo - лучший сервис для онлайн знакомств. Мы объединили уже тысячи сердец">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href = 'css/style.css'>
@@ -22,14 +24,13 @@
 			</div>
 		</header>
 		<main>
-
-			<div class="creating-container">
+			<div class="hat-container">
 				<div class="row text-center">
 					<div class="col-3">
 						<img src="images/straight.png" height="100" width="2" class = 'straight'>
 					</div>
 					<div class="col-6 align-center">
-						<a class ='btn btn-primary create-btn'><b>СОЗДАТЬ АККАУНТ</b></a>
+						<a href = 'creating.html' class ='btn btn-primary create-btn'><b>СОЗДАТЬ АККАУНТ</b></a>
 					</div>
 					<div class="col-3">
 						<img src="images/straight.png" height="100" width="2" class = 'straight'>
@@ -39,41 +40,54 @@
 			<div class="container">
 				<div class="info-container">
 					<h2 class = 'text-center brand-info'>Коротко о компании</h2>
-					<hr>
+					<hr class = info-hr>
 				</div>
+			</div>
+			<div class="container reviews-container">		
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+					<div class="carousel-indicators carousel-light">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<span class = 'review-name-age'> <b>Вероника, 26</b> </span>
+						<div class="review-hr"></div>
+						<q>В BaBadoo я нашла любовь всей своей жизни, 
+							и мы скоро поженимся, считаю что это один из самый лучших сайтов 
+							для знакомств.
+							Спасибо BaBadoo, за то, что сводит судьбы!
+						</q>
+						</div>
+						<div class="carousel-item noactive">
+						<span class = 'review-name-age'> <b>Анжела, 19</b> </span>
+						<div class="review-hr"></div>
+						<q>В BaBadoo - это хорошее место не только для того, чтобы
+							найти себе пару. Здесь также можно очень легко просто найти
+							человека, скоторым приятно поговорить по душам
+						</q>
+						</div>
+						<div class="carousel-item noactive">
+						<span class = 'review-name-age'> <b>Евангелия, 31</b> </span>
+						<div class="review-hr"></div>
+						<q>Считаю это лучшим сайтом для знакомств, здесь, ровно 3 года назад
+							я познакомилась со своим будущим мужем)! Надеюсь сайт будет развиваться
+							дальше.
+						</q>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Предыдущий</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Следующий</span>
+					</button>
+					</div>
 				
-				<div class="reviews-container">
-					
-					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-indicators carousel-light">
-						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						</div>
-						<div class="carousel-inner">
-						  <div class="carousel-item active">
-							<img src="..." class="d-block w-100" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="...">
-						  </div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Предыдущий</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Следующий</span>
-						</button>
-					  </div>
-					
-					
-				</div>
-
+				
 			</div>
 
 
@@ -81,8 +95,23 @@
 
 
 		</main>
-		
-
+		<div class="container footer">
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
+			  <div class="col-md-4 d-flex align-items-center">
+				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+				  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+				</a>
+				<span>&copy;2022 BaBadoo.</span>
+			  </div>
+		  
+			  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+				<li class="ms-3"><a href="#"><img src="images/VK.png" class="bi" width="24" height="24"></a></li>
+				<li class="ms-3"><a href="#"><img src="images/inst.png" class="bi" width="24" height="24"></a></li>
+				<li class="ms-3"><a href="#"><img src="images/tg.png" class="bi" width="24" height="24"></a></li>
+				
+			  </ul>
+			</footer>
+		  </div>
 		<script src = 'js/bootstrap.bundle.min.js'></script>
 	</body>
 </html>
