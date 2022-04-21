@@ -6,8 +6,12 @@
 }
 *{
     font-family: Domine-Bold;
-    overflow-x: hidden;
+
 }
+.questions{
+    max-width: 170px;
+}
+
 @media screen and (min-width:450.2px) {
     
     .navbar .login-btn {
@@ -26,6 +30,9 @@
         background-color:#A73898;
         border: none;
 
+    }
+    .hat-container{
+        padding: 0 0 20px 0;
     }
     #vr{
         position: absolute;
@@ -62,7 +69,7 @@
         height: 300px;
         width: 240px;
         margin: 0 20px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         background-color: white;
         box-shadow: 10px 7px 8px rgba(0,0,0,0.5);
     }
@@ -70,20 +77,18 @@
       .carousel-control-prev-icon, .carousel-control-next, .carousel-control-next-icon{
         display: none;
     }
-    .reviews-container{
-        margin-bottom: 25px;
-    }
     .noactive{
         display: block;
     }
     .account-creating{
         background-color: white;
         border-radius: 40px;
-        margin-bottom: 110px;
         max-width: 60%;
         height: 620px;
         padding-right: 10px;
         padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
     }
     #circle{
         position: relative;
@@ -99,22 +104,19 @@
         top: 64px;
         z-index: 1;
     }
-    #copyrite{
-        position: relative;
-        right: 38px;
-    }
     .questions{
         position: relative;
         line-height: 1;
         margin: 5px 0;
         left: 20px;
         bottom: 5px;
-
+        max-width: 110px;
     }
     #contacts{
         position: relative;
-        left: 180px;
+
     }
+   
     #title{
         margin-top: 38px;
         font-size: 20px;
@@ -148,8 +150,8 @@
     }
     #sumbtn{
         margin-top: 35px;
-        margin-right: 120px;
-        margin-left: 120px;
+        margin-right: auto;
+        margin-left: auto;
         width: 70%;
     }
 }
@@ -185,7 +187,7 @@
     }
     .create-btn{
         font-size: 14px;
-        margin-top: 40px;
+        margin-top: 34px;
         min-width: 100%;
     }
     .straight{
@@ -205,7 +207,7 @@
         padding: 15px 10px 20px 20px;
         border-radius: 30px;
         min-height: 240px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         background-color: white;
         box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 
@@ -217,17 +219,15 @@
         height: 100px;
         top: 690px;
     }
-    .reviews-container{
-        margin-bottom: 45px;
-    }
     .account-creating{
         background-color: white;
         border-radius: 40px;
-        margin-bottom: 110px;
         max-width: 90%;
         height: 620px;
         padding-right: 10px;
         padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
     }
     #circle{
         position: relative;
@@ -243,20 +243,18 @@
         top: 64px;
         z-index: 1;
     }
-    #copyrite{
-        position: relative;
-        right: 38px;
-    }
+
     .questions{
         position: relative;
         line-height: 1;
         margin: 5px 0;
         left: 18px;
         bottom: 5px;
+        max-width: 110px;
 
     }
     #title{
-        margin-top: 38px;
+        margin-top: 32px;
         font-size: 20px;
     }
     .form-control{
@@ -284,16 +282,23 @@
     }
     #sumbtn{
         margin-top: 35px;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: auto;
+        margin-left: auto;
         width: 70%;
     }
+    form{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
-main{
+.general-main{
     background-color: #c9a3c4;
 }
+.creating-main{
+    background-color: #B9AFAF;
+    padding-bottom: 100px;
+}
 .hat-container{
-    padding: 0 0 20px 0;
     background-image: url(../images/hat.webp);
 }
 .create-btn:hover{

@@ -18,22 +18,24 @@
 							BaBadoo
 						</a>
 						<a class="btn navbar-btn login-btn"> Войти <span id = vr>|</span> </a>
-						<a class="btn navbar-btn reg-btn"> Регистрация</a>
+						<a class="btn navbar-btn reg-btn" href = 'creating.html'> Регистрация</a>
 					</div>
 				</nav>
 			</div>
 		</header>
-		<main>
-			<div class="hat-container">
-				<div class="row text-center">
-					<div class="col-3">
-						<img src="images/straight.png" height="100" width="2" class = 'straight'>
-					</div>
-					<div class="col-6 align-center">
-						<a href = 'creating.html' class ='btn btn-primary create-btn'><b>СОЗДАТЬ АККАУНТ</b></a>
-					</div>
-					<div class="col-3">
-						<img src="images/straight.png" height="100" width="2" class = 'straight'>
+		<main class = 'general-main'>
+			<div class="hat-container">			
+				<div class="container">
+					<div class="row text-center hat-row">
+						<div class="col-3">
+							<img src="images/straight.png" height="100" width="2" class = 'straight'>
+						</div>
+						<div class="col-6 align-center">
+							<a href = 'creating.html' class ='btn btn-primary create-btn'><b>СОЗДАТЬ АККАУНТ</b></a>
+						</div>
+						<div class="col-3">
+							<img src="images/straight.png" height="100" width="2" class = 'straight'>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -86,14 +88,11 @@
 			</div>
 		</main>
 		<div class="container footer">
-			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
-			  <div class="col-md-4 d-flex align-items-center" id = 'copyrite' >
-				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-				  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-				</a>
-				<span>&copy;2022 BaBadoo.</span>
-			  </div>
-			  <div class = 'col-md-3 d-block justify-content-end' id = 'contacts'>
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2">
+			  	<div class="col-md-1" id = 'copyrite'>
+					<span>&copy;2022 BaBadoo.</span>
+			  	</div>
+				<div class = 'col-md-2 d-block' id = 'contacts'>
 				  	<p class = 'questions'>Возникли вопросы?</p>
 					<p class="questions">Свяжитесь с нами</p>
 					<ul class="nav list-unstyled d-flex">
@@ -104,7 +103,7 @@
 					</ul>
 				</div>
 			</footer>
-		  </div>
+		</div>
 		<script src = 'js/bootstrap.bundle.min.js'></script>
 	</body>
 </html>

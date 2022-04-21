@@ -18,7 +18,7 @@
                 </div>
             </nav>
 		</header>
-        <main>
+        <main class = 'creating-main'>
             <img src="images/heart.png" width="40" height="40" class="img-fluid rounded mx-auto d-block" id = 'heart'>
             <div class = 'mx-auto' id = 'circle'></div>
             <div class="container account-creating">
@@ -45,30 +45,27 @@
                         <input type="password" class="form-control form-control-sm" id="pass">
                         <a href="#" class="password-control" onclick= "return show_hide_password(this);"></a>
                     </div>
-                    <button type="submit" class="btn btn-primary" id = 'sumbtn'>Создать</button>
+                    <button type="submit" class="btn btn-primary d-flex justify-content-center" id = 'sumbtn'>Создать</button>
                 </form>
             </div>
         </main>
         <div class="container footer">
-			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
-			  <div class="col-md-4 d-flex align-items-center" id = 'copyrite' >
-				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-				  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-				</a>
-				<span>&copy;2022 BaBadoo.</span>
-			  </div>
-			  <div class = 'col-md-3 d-block justify-content-end' id = 'contacts'>
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-2">
+			  	<div class="col-md-1" id = 'copyrite'>
+					<span>&copy;2022 BaBadoo.</span>
+			  	</div>
+				<div class = 'col-md-2 d-block' id = 'contacts'>
 				  	<p class = 'questions'>Возникли вопросы?</p>
 					<p class="questions">Свяжитесь с нами</p>
 					<ul class="nav list-unstyled d-flex">
-						<li class="ms-3"><a href="#"><img src="images/vk.webp"></a></li>
-                        <li class="ms-3"><a href="#"><img src="images/inst.webp" ></a></li>
-						<li class="ms-3"><a href="#"><img src="images/tg.webp" ></a></li>
+						<li class="ms-3"><a href="#"><img src="images/VK.webp"> </a></li>
+						<li class="ms-3"><a href="#"><img src="images/inst.webp"></a></li>
+						<li class="ms-3"><a href="#"><img src="images/tg.webp"> </a></li>
 						
 					</ul>
 				</div>
 			</footer>
-		  </div>
+		</div>
         <script src = 'js/bootstrap.bundle.min.js'></script>
         <script>
             function show_hide_password(target){
