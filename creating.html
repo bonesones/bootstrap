@@ -23,7 +23,7 @@
             <div class = 'mx-auto' id = 'circle'></div>
             <div class="container account-creating">
                 <h2 id = 'title' class="text-center"><b>СОЗДАНИЕ АККАУНТА</b></h2>
-                <form>  
+                <form id = 'regform'>  
                     <div class="mt-4">
                         <label for="name" class="form-label">Имя</label>
                         <input type="text" class="form-control form-control-sm" id="name">
@@ -43,9 +43,9 @@
                     <div class="mt-3" id = 'passw'>
                         <label for="password" class="form-label">Пароль</label>
                         <input type="password" class="form-control form-control-sm" id="pass">
-                        <a href="#" class="password-control" onclick= "return show_hide_password(this);"></a>
+                        <a href="#" class="password-control" onclick= "show_hide_password(this);"></a>
                     </div>
-                    <button type="submit" class="btn btn-primary d-flex justify-content-center" id = 'sumbtn'>Создать</button>
+                    <button type = 'submit' onclick="clickSubmit()" class="btn btn-primary d-flex justify-content-center" id = 'sumbtn'>Создать</button>
                 </form>
             </div>
         </main>
@@ -80,5 +80,10 @@
             return false;
         
         }
+        </script>
+        <script>
+            function clickSubmit() {
+             myWin= open("../account.html");
+            }
         </script>
     </body>

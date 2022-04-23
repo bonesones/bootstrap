@@ -105,5 +105,17 @@
 			</footer>
 		</div>
 		<script src = 'js/bootstrap.bundle.min.js'></script>
+		<script>	
+			var mediaQueryList = window.matchMedia('(max-width: 450px)');
+			function screenTest(mediaQueryList) {
+				if (mediaQueryList.matches) {
+					document.querySelector('.reviews-container').classList.add('carousel-fade')
+				} else {
+					document.querySelector('.reviews-container').classList.remove('carousel-fade')
+					
+				}
+			}
+			mediaQueryList.addListener(screenTest);
+		</script>
 	</body>
 </html>
