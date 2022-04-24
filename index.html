@@ -111,9 +111,12 @@
 			var mediaQueryList = window.matchMedia('(max-width: 450px)');
 			function screenTest(mediaQueryList) {
 				if (mediaQueryList.matches) {
-					document.querySelector('.reviews-container').classList.add('carousel-fade')
+					document.querySelector('.carousel').classList.add('carousel-fade');
+					document.querySelector('.carousel').classList.remove('slide');
+
 				} else {
-					document.querySelector('.reviews-container').classList.remove('carousel-fade')
+					document.querySelector('.carousel').classList.add('slide');
+					document.querySelector('.carousel').classList.remove('carousel-fade')
 					
 				}
 			}
