@@ -450,7 +450,7 @@
         min-width: 230px;
         float: right;
         height: 100px;
-        border-radius: 10px;
+        border-radius: 15px;
         overflow: hidden;
         
     }
@@ -503,12 +503,15 @@
     .interests{
         background-color: #C996C2;
         min-height: 100px;
-        border-radius: 5px;
+        border-radius: 15px;
     }
     .popularity{
         background-color: #C996C2;
         min-height: 100px;
-        border-radius: 5px;
+        border-radius: 15px;
+    }
+    .imgphoto{
+        border-radius: 15px;
     }
 
     .guests{
