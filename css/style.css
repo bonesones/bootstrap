@@ -39,11 +39,6 @@
         right: 65px;
         z-index: 1;
     }
-    .create-btn{
-        margin-top: 40px;
-        min-width: 370px;
-
-    }
     .info-container{
         color:white;
         padding-top: 15px;
@@ -167,6 +162,11 @@
     .popularity-graph{
         padding-left: 20px;
     }
+    .create-btn{
+            margin-top: 40px;
+            min-width: 250px;
+
+    }
    
     .about-me-info{
         background-color: #C996C2;
@@ -284,6 +284,14 @@
         border-radius: 50%;
     }
 }
+@media screen and (min-width: 768.2px){
+    .create-btn{
+            margin-top: 40px;
+            min-width: 370px;
+
+    }
+}
+
 @media screen and (max-width:450px) {
     
     .navbar .login-btn {
@@ -653,5 +661,4 @@ div.container.footer{
 .navlink{
     opacity: 100%;
 }
-    
 
