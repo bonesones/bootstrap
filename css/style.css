@@ -428,6 +428,8 @@
     .anket{
         color:#A73898;
         font-size: 22px;
+        margin-top: 10px;
+    
     }
 
     .avatar{
@@ -489,7 +491,7 @@
     }
     .edit{
         float: right;
-        padding: 0 10px 0 0;
+        margin-top: 10px;
     }
     .second-line_third-line{
         margin-top: 20px;
