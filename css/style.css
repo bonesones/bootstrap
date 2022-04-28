@@ -164,6 +164,9 @@
         font-size: 28px;
         margin-top: 15px;
     }
+    .popularity-graph{
+        padding-left: 20px;
+    }
    
     .about-me-info{
         background-color: #C996C2;
@@ -194,6 +197,9 @@
     .second-line_third-line{
         margin-top: 20px;
 
+    }
+    .interests-section{
+        padding-top: 15px;
     }
     .photoes-line{
         margin-bottom: 10px;
@@ -506,6 +512,9 @@
     .guests{
         color: #A73898;
         font-size: 13px;
+    }
+    .interests-section{
+        padding-top: 15px;
     }
 }
 @media screen and (max-width: 365px){
