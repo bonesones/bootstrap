@@ -78,7 +78,7 @@
     .account-creating{
         background-color: white;
         border-radius: 40px;
-        max-width: 60%;
+        max-width: 30%;
         height: 620px;
         padding-right: 10px;
         padding-left: 10px;
@@ -162,25 +162,13 @@
     .anket{
         color:#A73898;
         font-size: 28px;
+        margin-top: 15px;
     }
-
-    .avatar{
-        background-color: #d44ac1;
-        border-radius: 50%;   
-    }
-    .online{
-        position: relative;
-        bottom: 20px;
-        left: 70px;
-        background-color: #A73898;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-    }
+   
     .about-me-info{
         background-color: #C996C2;
-        height: 100px;
-        border-radius: 10px;
+        height: 120px;
+        border-radius: 15px;
         overflow: hidden;
         
     }
@@ -196,10 +184,13 @@
         line-height: 1;
         
     }
+
+
     .edit{
         float: right;
-        padding: 0 10px 0 0;
+        margin-top: 10px ;
     }
+
     .second-line_third-line{
         margin-top: 20px;
 
@@ -210,12 +201,12 @@
     .interests{
         background-color: #C996C2;
         min-height: 100px;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .popularity{
         background-color: #C996C2;
         min-height: 100px;
-        border-radius: 10px;
+        border-radius: 15px;
     }
 
     .guests{
@@ -228,6 +219,7 @@
         height: 200px;
         margin-left: 5px;
         margin-right: 5px;
+        border-radius: 15px;
 
     }
     .photoestxt{
@@ -244,6 +236,46 @@
         left: 65px;
         color:#A73898;
         font-size: 28px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 2200px){
+    .avatar{
+        background-color: #d44ac1;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 62px;
+        top: 8px;
+    }
+    .online{
+        position: relative;
+        bottom: 23px;
+        left: 175px;
+        background-color: #A73898;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 768.8px){
+    .avatar{
+        background-color: #d44ac1;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        position: relative;
+        left: 22px;
+        top: 8px;
+    }
+    .online{
+        position: relative;
+        bottom: 20px;
+        left: 112px;
+        background-color: #A73898;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
     }
 }
 @media screen and (max-width:450px) {
@@ -486,6 +518,57 @@
     }
     
 }
+@media screen and (min-width: 989px) (max-width:1288px) {
+    .account-creating{
+        background-color: white;
+        border-radius: 40px;
+        max-width: 40%;
+        height: 620px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 721px) and (max-width:988px) {
+    .account-creating{
+        background-color: white;
+        border-radius: 40px;
+        max-width: 50%;
+        height: 620px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 515px) and (max-width:720px) {
+    .account-creating{
+        background-color: white;
+        border-radius: 40px;
+        max-width: 60%;
+        height: 620px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 450.2px) and (max-width:515px) {
+    .account-creating{
+        background-color: white;
+        border-radius: 40px;
+        max-width: 70%;
+        height: 620px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+
+
 .interests-section{
     list-style-type: none;
     color: #A73898;
@@ -556,3 +639,5 @@ div.container.footer{
 .navlink{
     opacity: 100%;
 }
+    
+
