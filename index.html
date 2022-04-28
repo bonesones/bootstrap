@@ -75,18 +75,19 @@
 						</q>
 						</div>
 					</div>
-				</div>
-				<div class="arrow-icons">
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Предыдущий</span>
-					</button>
+					<div class="arrow-icons">
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
 
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Следующий</span>
-					</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
 				</div>
+				
 			</div>
 		</main>
 		<div class="container footer">
@@ -108,12 +109,14 @@
 		</div>
 		<script src = 'js/bootstrap.bundle.min.js'></script>
 		<script>
-			const mediaQuery = window.matchMedia('(max-width: 450.2px)')
+			const mediaQuery = window.matchMedia('(max-width: 992px)')
 			function phoneChange(e) {
 				if (e.matches) {
-					document.querySelector('.carousel').classList.add('carousel-fade')
+					document.querySelector('.carousel').classList.add('carousel-fade');
+					document.querySelector('.carousel').classList.remove('slide');
 				}else{
-					document.querySelector('.carousel').classList.remove('carousel-fade')
+					document.querySelector('.carousel').classList.remove('carousel-fade');
+
 				}
 			}
 			mediaQuery.addListener(phoneChange)

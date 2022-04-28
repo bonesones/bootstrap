@@ -51,25 +51,6 @@
         display: flex;
         justify-content: center;
     }
-    .carousel-item{
-        color: #A73898;
-        padding: 15px 20px 20px 40px;
-        border-radius: 30px;
-        height: 300px;
-        width: 240px;
-        margin: 0 20px;
-        margin-bottom: 70px;
-        background-color: white;
-        box-shadow: 10px 7px 8px rgba(0,0,0,0.5)
-    }
-    
-      .carousel-indicators, .carousel-light, .carousel-control-prev, 
-      .carousel-control-prev-icon, .carousel-control-next, .carousel-control-next-icon{
-        display: none;
-    }
-    .noactive{
-        display: block;
-    }
     .account-creating{
         background-color: white;
         border-radius: 40px;
@@ -164,7 +145,7 @@
     }
     .create-btn{
             margin-top: 40px;
-            min-width: 250px;
+            min-width: 205px;
 
     }
    
@@ -343,13 +324,6 @@
         background-color: white;
         box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 
-    }
-    #carouselExampleIndicators{
-        max-width: 70%;
-    }
-    .carousel-control-prev, .carousel-control-next{
-        height: 100px;
-        top: 690px;
     }
     .account-creating{
         background-color: white;
@@ -540,7 +514,23 @@
     }
     
 }
-@media screen and (min-width: 989px) (max-width:1288px) {
+@media screen and (min-width: 991.8px){
+    .carousel-item{
+        color: #A73898;
+        padding: 15px 20px 20px 40px;
+        border-radius: 30px;
+        height: 250px;
+        max-width: 340px;
+        margin: 0 20px;
+        margin-bottom: 70px;
+        background-color: white;
+        box-shadow: 10px 7px 8px rgba(0,0,0,0.5);
+    }
+    .noactive{
+        display: block;
+    }
+
+
     .account-creating{
         background-color: white;
         border-radius: 40px;
@@ -550,6 +540,10 @@
         padding-left: 10px;
         margin-bottom: 10px;
         padding-top: 10px;
+    }
+    
+    .carousel-control-prev, .carousel-control-next, .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
     }
 }
 @media screen and (min-width: 721px) and (max-width:988px) {
@@ -662,3 +656,95 @@ div.container.footer{
     opacity: 100%;
 }
 
+@media screen and (min-width: 764.2px) and (max-width: 992px){
+    .carousel-item{
+        color: #A73898;
+        padding: 15px 20px 20px 40px;
+        border-radius: 30px;
+        height: 230px;
+        max-width: 390px;
+        margin: 0 20px;
+        margin-bottom: 70px;
+        background-color: white;
+        box-shadow: 10px 7px 8px rgba(0,0,0,0.5)
+    }
+    .carousel-control-prev, .carousel-control-next{
+        height: 100px;
+        top: 75px;
+    }
+    #carouselExampleIndicators{
+        min-width: 40%;
+    }
+    .carousel-control-next{
+        margin-right: -47px;
+    }
+    .carousel-control-prev{
+        margin-left: -47px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #carouselExampleIndicators{
+        min-width: 40%;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        height: 100px;
+        top: 690px;
+    }
+     .carousel-item{
+        color: #A73898;
+        padding: 15px 20px 20px 40px;
+        border-radius: 30px;
+        height: 300px;
+        max-width: 240px;
+        margin: 0 20px;
+        margin-bottom: 70px;
+        background-color: white;
+        box-shadow: 10px 7px 8px rgba(0,0,0,0.5)
+    }
+}
+@media screen and (min-width: 450.2px) and (max-width: 764px){
+    #carouselExampleIndicators{
+        max-width: 70%;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        height: 100px;
+        top: 85px;
+    }
+    .carousel-item{
+        color: #A73898;
+        padding: 15px 20px 20px 40px;
+        border-radius: 30px;
+        height: 300px;
+        max-width: 240px;
+        margin: 0 20px;
+        margin-bottom: 70px;
+        background-color: white;
+        box-shadow: 10px 7px 8px rgba(0,0,0,0.5);
+    }
+}
+@media screen and (max-width: 992px){
+    .carousel-control-next, .carousel-control-prev {
+        position: absolute;
+        top: 64px;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }
+    .carousel-control-next{
+        margin-right: -47px;
+    }
+    .carousel-control-prev{
+        margin-left:-47px;
+
+    }
+}

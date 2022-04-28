@@ -1,4 +1,4 @@
-# bootstrap BaBadoo Дима, Денис, Никита
+# bootstrap BaBadoo
 ## 19.04  
 Начал переписывать сайт на Bootstrap с нуля
 ## 23.04
