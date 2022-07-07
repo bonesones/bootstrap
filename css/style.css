@@ -1,18 +1,25 @@
 @font-face {
     font-family: "Domine-Bold";
-    src: url('../fonts/Domine-Bold.ttf') format("truetype"); 
-    font-style: normal; 
-    font-weight: 700; 
+    src: url('../fonts/Domine-Bold.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }
+
 *{
-    font-family: Domine-Bold;
+    font-family: "Oswald";
 }
 .questions{
     max-width: 170px;
 }
+#company-info{
+  padding: 15px 33px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
 
 @media screen and (min-width:450.2px) {
-    
+
     .navbar .login-btn {
         position: absolute;
         top: 10px;
@@ -46,7 +53,7 @@
         border-radius: 30px;
         min-height: 350px;
         background-color: #d44ac1;
-    }   
+    }
     .reviews-container{
         display: flex;
         justify-content: center;
@@ -87,7 +94,7 @@
         position: relative;
 
     }
-   
+
     #title{
         margin-top: 38px;
         font-size: 20px;
@@ -131,7 +138,7 @@
         width: 80px;
         text-align: center;
     }
-    .navbar-nav{        
+    .navbar-nav{
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -148,13 +155,13 @@
             min-width: 205px;
 
     }
-   
+
     .about-me-info{
         background-color: #C996C2;
         height: 120px;
         border-radius: 15px;
         overflow: hidden;
-        
+
     }
     .anket-header{
         color:#A73898;
@@ -166,7 +173,7 @@
         font-size: 15px;
         padding-left: 10px;
         line-height: 1;
-        
+
     }
 
 
@@ -213,7 +220,7 @@
         position: relative;
         top:82px;
         left: 49px;
-        
+
         color:#A73898;
         font-size: 18px;
     }
@@ -274,7 +281,7 @@
 }
 
 @media screen and (max-width:450px) {
-    
+
     .navbar .login-btn {
         position: absolute;
         color:white;
@@ -311,10 +318,10 @@
         padding-top: 15px;
         margin: 50px 10px;
         border-radius: 30px;
-        min-height: 350px;
+        min-height: 380px;
         background-color: #d44ac1;
     }
- 
+
     .carousel-item{
         color: #A73898;
         padding: 15px 10px 20px 20px;
@@ -411,12 +418,12 @@
         color:#A73898;
         font-size: 22px;
         margin-top: 10px;
-    
+
     }
 
     .avatar{
         background-color: #d44ac1;
-        border-radius: 50%;   
+        border-radius: 50%;
     }
     .online{
         position: relative;
@@ -434,7 +441,7 @@
         height: 100px;
         border-radius: 15px;
         overflow: hidden;
-        
+
     }
     .imgphoto{
         background-color: #c9a3c4;
@@ -448,7 +455,7 @@
         position: relative;
         top:55px;
         left: 12px;
-        
+
         color:#A73898;
         font-size: 18px;
     }
@@ -469,7 +476,7 @@
         font-size: 13px;
         padding-left: 10px;
         line-height: 1;
-        
+
     }
     .edit{
         float: right;
@@ -512,7 +519,7 @@
         color:#A73898;
         font-size: 28px;
     }
-    
+
 }
 @media screen and (min-width: 991.8px){
     .carousel-item{
@@ -541,7 +548,7 @@
         margin-bottom: 10px;
         padding-top: 10px;
     }
-    
+
     .carousel-control-prev, .carousel-control-next, .carousel-control-prev-icon, .carousel-control-next-icon{
         display: none;
     }
